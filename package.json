@@ -12,9 +12,7 @@
   "keywords": [],
   "author": "Martin Shaw <developer@martinshaw.co>",
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "nx": "20.4.0"
-  },
-  "dependencies": {
-    "concurrently": "^9.1.2"
   }
 }

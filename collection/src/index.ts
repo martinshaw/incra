@@ -8,6 +8,8 @@ File Name:   index.ts
 
 Description: description*/
 
-import Button from '@incra/component-button'
+import Button from '@incra/button'
 
-export default Button
+export default {
+    Button,
+}

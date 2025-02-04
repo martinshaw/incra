@@ -10,6 +10,6 @@ Description: description
 
 */
 
-const Button = () => <button>I'm a button</button>
+const Button = () => <button>I'm a rolo</button>
 
 export default Button
