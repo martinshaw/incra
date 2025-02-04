@@ -1,20 +1,40 @@
 {
-  "name": "collection",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@incra/collection",
+  "version": "0.0.1",
+  "description": "Classic Cocoa UI inspired UI framework for React web / native-like apps",
+  "type": "module",
+  "files": [
+    "/lib"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./lib/cjs/index.js",
+        "types": "./lib/cjs/index.d.ts"
+      },
+      "import": {
+        "default": "./lib/esm/index.js",
+        "types": "./lib/esm/index.d.ts"
+      }
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Martin Shaw <developer@martinshaw.co>",
   "devDependencies": {
+    "@types/react": "^18.3.18",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "typescript": "~5.6.3",
+    "zx-cjs": "7.0.7-0"
   },
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@incra/component-button": "workspace:^"
   }
 }
