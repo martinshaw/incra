@@ -4,7 +4,7 @@
   "type": "module",
   "author": "Martin Shaw <developer@martinshaw.co>",
   "scripts": {
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev --ci",
     "build-storybook": "storybook build"
   },
   "dependencies": {

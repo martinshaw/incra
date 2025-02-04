@@ -3,9 +3,18 @@
   "version": "0.0.1",
   "description": "Classic Cocoa UI inspired UI framework for React web / native-like apps",
   "scripts": {
+    "dev": "nx watch --all -- nx run \\$NX_PROJECT_NAME:build",
+    "build": "nx run-many --target=build --all",
     "storybook": "pnpm --filter storybook storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-storybook": "concurrently \"pnpm dev\" \"pnpm storybook\"",
+    "build-storybook": "pnpm --filter storybook build-storybook"
   },
   "keywords": [],
-  "author": "Martin Shaw <developer@martinshaw.co>"
+  "author": "Martin Shaw <developer@martinshaw.co>",
+  "devDependencies": {
+    "nx": "20.4.0"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
 }

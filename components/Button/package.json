@@ -18,11 +18,10 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./build.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Martin Shaw <developer@martinshaw.co>",
   "devDependencies": {
     "@types/react": "^18.3.18",
     "react": "^18.3.1",
