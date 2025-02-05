@@ -39,6 +39,7 @@
     "react-dom": "^18.3.1"
   },
   "dependencies": {
-    "@incra/button": "workspace:^"
+    "@incra/button": "workspace:^",
+    "@incra/icon": "workspace:^"
   }
 }

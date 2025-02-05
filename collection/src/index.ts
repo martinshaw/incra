@@ -9,7 +9,9 @@ File Name:   index.ts
 Description: description*/
 
 import Button from '@incra/button'
+import { SFSymbolIcon, type SFSymbolIconNames } from '@incra/icon'
 
-export default {
+export {
     Button,
+    SFSymbolIcon,
 }

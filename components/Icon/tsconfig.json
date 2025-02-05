@@ -1,0 +1,23 @@
+{ 
+    "compilerOptions": { 
+        "incremental": true, 
+        "noImplicitAny": true, 
+        "allowJs": true, 
+        "target": "esnext", 
+        "lib": ["esnext","dom"], 
+        "module": "ESNext", 
+        "moduleResolution": "bundler",
+        "alwaysStrict": true, 
+        "skipLibCheck": true, 
+        "noUnusedParameters": false, 
+        "noUnusedLocals": false, 
+        "strictNullChecks": true, 
+        "noUncheckedIndexedAccess": true, 
+        "esModuleInterop": true, 
+        "allowSyntheticDefaultImports": true, 
+        "forceConsistentCasingInFileNames": true, 
+        "typeRoots": ["./node_modules/@types", "./@types"], 
+        "jsx": "preserve",
+    }, 
+    "include": ["src/**/*"] 
+}

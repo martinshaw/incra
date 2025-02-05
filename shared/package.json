@@ -1,0 +1,24 @@
+{
+  "name": "@incra/shared",
+  "version": "0.0.1",
+  "description": "Shared functionality for Incra sub-packages",
+  "type": "module",
+  "files": [
+    "/src"
+  ],
+  "scripts": {},
+  "keywords": [],
+  "author": "Martin Shaw <developer@martinshaw.co>",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/react": "^18.3.18",
+    "glamor": "^2.20.40",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "~5.6.3"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

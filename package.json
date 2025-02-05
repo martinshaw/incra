@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Classic Cocoa UI inspired UI framework for React web / native-like apps",
   "scripts": {
-    "dev": "nx watch --all -- nx run \\$NX_PROJECT_NAME:build",
-    "build": "nx run-many --target=build --all",
+    "dev": "nx watch --all -- nx run-many -t build",
+    "build": "nx run-many -t build",
+    "graph": "nx dep-graph",
     "storybook": "pnpm --filter storybook storybook",
     "dev-storybook": "concurrently \"pnpm dev\" \"pnpm storybook\"",
     "build-storybook": "pnpm --filter storybook build-storybook"

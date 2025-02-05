@@ -5,7 +5,8 @@
         "allowJs": true, 
         "target": "esnext", 
         "lib": ["esnext","dom"], 
-        "module": "nodenext", 
+        "module": "ESNext", 
+        "moduleResolution": "bundler",
         "alwaysStrict": true, 
         "skipLibCheck": true, 
         "noUnusedParameters": false, 
@@ -18,5 +19,5 @@
         "typeRoots": ["./node_modules/@types", "./@types"], 
         "jsx": "preserve",
     }, 
-    "include": ["src/**/*", "test/**/*"] 
+    "include": ["src/**/*"] 
 }

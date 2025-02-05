@@ -1,4 +1,5 @@
 packages:
+  - 'components/**'
   - 'collection'
   - 'storybook'
-  - 'components/**'
+  - 'shared'
