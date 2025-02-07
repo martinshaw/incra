@@ -2,16 +2,18 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react";
 
+// Need to package the assets folder in dist 
+
 export default defineConfig({
   plugins: [
     react(),
     dts(),
   ],
-  publicDir: "../components/Application/assets",
+  publicDir: "assets",
   build: {
     lib: {
       entry: "src/index.ts",
-      name: "Incra",
+      name: "Application",
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {

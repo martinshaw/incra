@@ -1,5 +1,5 @@
 /*
-All Rights Reserved, (c) 2025 ffs
+All Rights Reserved, (c) 2025 incra
 
 Author:      Martin Shaw (developer@martinshaw.co)
 Created:     2025-02-04T15:36:16.198Z
@@ -52,6 +52,7 @@ const Button = forwardRef(function <T extends HTMLButtonElement>(
         color: "#444",
         cursor: "pointer",
         fontWeight: "bold",
+        fontFamily: 'inherit',
         lineHeight: "1",
         textAlign: "center",
         textDecoration: "none",
