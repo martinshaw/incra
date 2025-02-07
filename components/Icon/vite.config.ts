@@ -6,9 +6,10 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-        insertTypesEntry: true,
-        cleanVueFileName: true,
-        staticImport: true,
+       rollupTypes: true,
+       tsconfigPath: './tsconfig.json',
+      include: ["src/**/*"],
+      outDir: "dist",
     }),
   ],
   build: {

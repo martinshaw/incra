@@ -37,7 +37,7 @@ const dataUrlsKeyedByFileName = files.reduce(
 console.log(`Generated ${Object.keys(dataUrlsKeyedByFileName).length} data URLs from ${files.length} files`);
 
 // output file
-const outputFile = path.join(import.meta.dirname, '../../src/generated.ts');
+const outputFile = path.join(import.meta.dirname, '../../src/Generated.ts');
 
 const templateFileContents = `
 /*
@@ -46,18 +46,18 @@ All Rights Reserved, (c) 2025 incra
 Author:      Martin Shaw (developer@martinshaw.co)
 Created:     2025-02-04T22:50:08.428Z
 Modified:     2025-02-04T22:50:08.428Z
-File Name:   generated.tsx
+File Name:   Generated.tsx
 
 Description: description
 
 */
 
-const generated = {${Object.values(dataUrlsKeyedByFileName).join(", ")}} as const;
+const Generated = {${Object.values(dataUrlsKeyedByFileName).join(", ")}} as const;
 
 type SFSymbolIconNames = ${Object.keys(dataUrlsKeyedByFileName).map((key) => `"${key}"`).join(" | ")};
 
 export {
-    generated,
+    Generated,
     type SFSymbolIconNames
 };
 

@@ -12,11 +12,11 @@ Description: description
 
 import { forwardRef, useMemo } from "react";
 import { css } from "glamor";
-import { generated, type SFSymbolIconNames } from "./generated";
+import { Generated, type SFSymbolIconNames } from "./Generated";
 
 type SFSymbolIconProps = {
   name: SFSymbolIconNames;
-  size?: number;
+  size?: "small" | "base" | "large";
   //   fill?: string;
   //   stroke?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
@@ -27,7 +27,7 @@ const SFSymbolIcon = forwardRef(function <T extends HTMLDivElement>(
 ) {
   const {
     name,
-    size = 16,
+    size = 'inherit',
     // fill = "currentColor",
     // stroke = "none",
     ...containerProps
@@ -39,10 +39,10 @@ const SFSymbolIcon = forwardRef(function <T extends HTMLDivElement>(
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: size,
-        height: size,
-        backgroundImage: generated[name]
-          ? 'url("data:image/svg+xml,' + generated[name] + '")'
+        width: size === "small" ? "10px" : size === "large" ? "20px" : "-webkit-fill-available",
+        height: size === "small" ? "10px" : size === "large" ? "20px" : "-webkit-fill-available",
+        backgroundImage: Generated[name]
+          ? 'url("data:image/svg+xml,' + Generated[name] + '")'
           : null,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
@@ -51,13 +51,13 @@ const SFSymbolIcon = forwardRef(function <T extends HTMLDivElement>(
         // stroke: stroke,
       }),
     }),
-    [size /* fill, stroke */, , name, generated]
+    [size /* fill, stroke */, , name, Generated]
   );
 
   return <div ref={ref} {...style.container} {...containerProps}></div>;
 });
 
 export {
-    SFSymbolIcon,
-    type SFSymbolIconNames
+  SFSymbolIcon,
+  type SFSymbolIconNames
 };
