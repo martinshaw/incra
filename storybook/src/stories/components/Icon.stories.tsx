@@ -29,7 +29,7 @@ export const ArrowLeft: Story = {
   name: 'arrow.left',
   args: {
     name: "arrow.left",
-    size: 24
+    size: 'large'
   },
 };
 
@@ -37,7 +37,7 @@ export const ArrowRight: Story = {
   name: 'arrow.right',
   args: {
     name: "arrow.right",
-    size: 24
+    size: 'large'
   },
 };
 
@@ -45,7 +45,7 @@ export const ArrowUp: Story = {
   name: 'arrow.up',
   args: {
     name: "arrow.up",
-    size: 24
+    size: 'large'
   },
 };
 
@@ -53,7 +53,7 @@ export const ArrowDown: Story = {
   name: 'arrow.down',
   args: {
     name: "arrow.down",
-    size: 24
+    size: 'large'
   },
 };
 

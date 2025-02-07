@@ -15,7 +15,7 @@ import { css } from "glamor";
 import './Application.css';
 
 type ApplicationProps =  React.PropsWithChildren<{
-  rootElementProps: React.HTMLAttributes<HTMLDivElement>; 
+  rootElementProps?: React.HTMLAttributes<HTMLDivElement>; 
 }>;
 
 type ApplicationRef = {
@@ -30,7 +30,7 @@ const Application = forwardRef(function <ApplicationRef>(
   //   ...rootElementProps,
   // } = props;
 
-  const rootElementProps = props.rootElementProps;
+  const rootElementProps = props?.rootElementProps ?? {};
 
   const style = useMemo(
     () => ({

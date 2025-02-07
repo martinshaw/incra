@@ -1,4 +1,4 @@
-import { Button, SFSymbolIcon } from "@incra/collection";
+import { Application, Button, SFSymbolIcon } from "@incra/collection";
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
@@ -27,6 +27,7 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Button",
     size: "base",
@@ -38,6 +39,7 @@ export const Primary: Story = {
 };
 
 export const Disabled: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Disabled Button",
     size: "base",
@@ -49,6 +51,7 @@ export const Disabled: Story = {
 };
 
 export const Small: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Small Button",
     size: "small",
@@ -60,6 +63,7 @@ export const Small: Story = {
 };
 
 export const Large: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Large Button",
     size: "large",
@@ -73,9 +77,11 @@ export const Large: Story = {
 export const Fill: Story = {
   decorators: [
     (Story) => (
-      <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-        <Story />
-      </div>
+      <Application>
+        <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
+          <Story />
+        </div>
+      </Application>
     ),
   ],
   args: {
@@ -91,9 +97,11 @@ export const Fill: Story = {
 export const FillHorizontal: Story = {
   decorators: [
     (Story) => (
-      <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-        <Story />
-      </div>
+      <Application>
+        <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
+          <Story />
+        </div>
+      </Application>
     ),
   ],
   args: {
@@ -109,9 +117,11 @@ export const FillHorizontal: Story = {
 export const FillVertical: Story = {
   decorators: [
     (Story) => (
-      <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
-        <Story />
-      </div>
+      <Application>
+        <div style={{ borderStyle: 'dashed', borderWidth: 1, width: "50vw", height: "50vh", display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: 'center' }}>
+          <Story />
+        </div>
+      </Application>
     ),
   ],
   args: {
@@ -125,6 +135,7 @@ export const FillVertical: Story = {
 };
 
 export const LeftIcon: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Left Button",
     size: "base",
@@ -136,6 +147,7 @@ export const LeftIcon: Story = {
 };
 
 export const RightIcon: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Right Button",
     size: "base",
@@ -147,6 +159,7 @@ export const RightIcon: Story = {
 };
 
 export const LeftSmallIcon: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Left Button",
     size: "small",
@@ -158,6 +171,7 @@ export const LeftSmallIcon: Story = {
 };
 
 export const RightLargeIcon: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Right Button",
     size: "large",
@@ -169,6 +183,7 @@ export const RightLargeIcon: Story = {
 };
 
 export const SingleIcon: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     children: <SFSymbolIcon name='arrow.down' />,
     size: "base",
@@ -180,6 +195,7 @@ export const SingleIcon: Story = {
 };
 
 export const intentPrimary: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Options...",
     size: "base",
@@ -191,6 +207,7 @@ export const intentPrimary: Story = {
 };
 
 export const intentSuccess: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Save",
     size: "base",
@@ -202,6 +219,7 @@ export const intentSuccess: Story = {
 };
 
 export const intentWarning: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Hazard",
     size: "base",
@@ -213,6 +231,7 @@ export const intentWarning: Story = {
 };
 
 export const intentDanger: Story = {
+  decorators: [(Story) => (<Application><Story /></Application>)],
   args: {
     text: "Delete",
     size: "base",
